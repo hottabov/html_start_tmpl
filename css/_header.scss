@@ -14,20 +14,15 @@
 body {
   background-color: $color-body;
   font-family: $mainFont;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
-/* Main Styles
-Author: Vadim Leonov
-Last changing: 18.03.2021
-*/
+
 
 .header {
-  &__top {
 
-  }
-
-  &__logo {
-
-  }
 }
 
