@@ -1,0 +1,33 @@
+$minWidth: 320px;
+$maxWidth: 1024px;
+$mainColor: #00345f;
+$secondColor: #810f0f;
+$white: #fff;
+$black: #1f2123;
+
+$bgColor: #f3f3f3;
+$color-body: #f7f7f7;
+
+$md0: 460px;
+$md1: 640px;
+$md2: 768px;
+$md3: 1024px;
+$md4: 1200px;
+$md5: 1600px;
+
+// Fonts
+$headerFont: 'Oswald', sans-serif;
+$mainFont: 'Open Sans', sans-serif;
+
+$side-margin: 12px;
+@media (min-width: $md2) {
+  $side-margin: 20px;
+}
+
+$desktop-header-height: 56px;
+
+// comments
+$commentsColor: #385898;
+$commentsBorderColor: #dddfe2;
+
+$animate: all 0.2s ease-in-out;

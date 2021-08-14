@@ -1,0 +1,207 @@
+.comments {
+
+  position: relative;
+  padding: 60px 0;
+  font-family: Helvetica, Arial, sans-serif;
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 100%;
+    background-size: contain;
+    top: 0;
+  }
+
+  &__title {
+    padding-bottom: 30px;
+  }
+
+  &__block {
+    border: 1px solid $commentsBorderColor;
+    border-radius: 3px;
+    padding: 40px 12px;
+    background: $white;
+    @media (min-width: $md2) {
+      padding: 40px 60px;
+    }
+    @media (min-width: $md3) {
+      padding: 40px 80px;
+    }
+    @media (min-width: $md4) {
+      padding: 40px 20px;
+    }
+  }
+
+  &__header {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  &__counter {
+    font-weight: 600;
+    padding-top: 4px;
+  }
+
+  &__line {
+    border: 1px solid $commentsBorderColor;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+  }
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  &__name {
+    font-size: 14px;
+    color: $commentsColor;
+    font-weight: 600;
+    padding-bottom: 6px;
+  }
+  &__comment {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  &__right {
+    width: 100%;
+  }
+  &__button {
+    display: block;
+    background: #3578e5;
+    color: $white !important;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 14px;
+  }
+  &__footer {
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 11px;
+      color: #385898;
+    }
+  }
+  &__fb-icon {
+    margin-right: 6px;
+  }
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    margin-right: 6px;
+  }
+
+  &__choice {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid $commentsBorderColor;
+    background: #f5f6f7;
+    padding: 5px 22px 5px 8px;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 14px;
+      background: url("../files/arrows.png") no-repeat;
+      top: 4px;
+      right: 4px;
+    }
+  }
+}
+
+.write {
+  padding: 22px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  &__write {
+    width: calc(100% - 60px);
+  }
+
+  &__textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0 10px 6px;
+    border: 1px solid $commentsBorderColor;
+    font-family: Arial, sans-serif;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    background: #f5f6f7;
+    padding: 10px;
+    border: 1px solid $commentsBorderColor;
+    border-top: 0;
+    margin-top: -4px;
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: #90949c;
+  }
+
+  &__also {
+    margin-left: 6px;
+  }
+  &__button {
+    background: #9cb4d8;
+    color: $white;
+    font-size: 10px;
+    padding: 4px 6px;
+    font-weight: 600;
+    border-radius: 3px;
+    @media (min-width: $md0) {
+      font-size: 14px;
+    }
+  }
+}
+
+.likes {
+  font-size: 12px;
+  padding-top: 6px;
+  a {
+    color: #4267b2;
+  }
+  img {
+    margin-bottom: -3px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+  }
+  &__hours {
+    color: #90949c;
+  }
+}

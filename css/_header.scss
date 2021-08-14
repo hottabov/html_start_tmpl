@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 12px;
+  @media (min-width: $md0) {
+    padding: 0 20px;
+  }
+}
+
+body {
+  background-color: $color-body;
+  font-family: $mainFont;
+}
+
+/* Main Styles
+Author: Vadim Leonov
+Last changing: 18.03.2021
+*/
+
+.header {
+  &__top {
+
+  }
+
+  &__logo {
+
+  }
+}
+
